@@ -20,7 +20,7 @@ class Solution {
             solution[i] = prev * next;
         }
         
-        // return c(nums);
+        // return alternateSolution(nums);
         return solution;
     }
     
