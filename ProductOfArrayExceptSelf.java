@@ -24,21 +24,21 @@ class Solution {
         return solution;
     }
     
-//     public int[] alternateSolution(int[] nums) {
-//         int[] solution = new int[nums.length];
-//         solution[0] = 1;
-//         int prefix = 1;
-//         for (int i = 0; i < nums.length; i++) {
-//             solution[i] = prefix;
-//             prefix = nums[i] * prefix;
-//         }
+    public int[] alternateSolution(int[] nums) {
+        int[] solution = new int[nums.length];
+        solution[0] = 1;
+        int prefix = 1;
+        for (int i = 0; i < nums.length; i++) {
+            solution[i] = prefix;
+            prefix = nums[i] * prefix;
+        }
         
-//         int postfix = 1;
-//         for (int i = nums.length - 1; i >= 0; i--) {
-//             solution[i] = postfix * solution[i];
-//             postfix = nums[i] * postfix;
-//         }
+        int postfix = 1;
+        for (int i = nums.length - 1; i >= 0; i--) {
+            solution[i] = postfix * solution[i];
+            postfix = nums[i] * postfix;
+        }
         
-//         return solution;
-//     }
+        return solution;
+    }
 }
