@@ -1,4 +1,4 @@
-// Guys, when dealing with Integer (not the primitive), don't forget to use <integerObj>.intValue().
+// Guys, when dealing with Integer (not the primitive), don't forget to use <integerObj>.intValue() (or .equals if comparing).
 // https://stackoverflow.com/questions/10002037/comparing-integer-values-in-java-strange-behavior/10002066#10002066
 
 class Solution {
